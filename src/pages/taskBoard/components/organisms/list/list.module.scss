@@ -1,0 +1,72 @@
+.container {
+  border-radius: 0.5rem;
+  width: 32rem;
+  background-color: #ebecf0;
+  padding: 0rem 0.8rem;
+  height: fit-content;
+  cursor: pointer;
+
+  :global(.ant-card) {
+    background: #ebecf0;
+    border: none;
+    font-size: 1.4rem;
+  }
+
+  :global(.ant-card-head) {
+    padding: 0rem 0.8rem;
+    min-height: unset;
+  }
+
+  :global(.ant-card-head-title) {
+    padding: 0.8rem 0rem;
+  }
+
+  :global(.ant-card-body) {
+    padding: 0rem;
+  }
+}
+
+.listTitle {
+  padding: 0.8rem;
+}
+
+.tasksContainer {
+  width: 100%;
+}
+
+.task + .task {
+  margin-top: 1rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 0.8rem 0rem;
+}
+
+.inputTaskContainer {
+  padding: 0.8rem 0.8rem 1.6rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: white;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dragging {
+  opacity: 0.4;
+  cursor: grabbing;
+  background-color: gray;
+  border: 1px dashed black;
+}
+
+.addNewTaskButton {
+  padding: 0.8rem;
+  background: none;
+  width: -webkit-fill-available;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}

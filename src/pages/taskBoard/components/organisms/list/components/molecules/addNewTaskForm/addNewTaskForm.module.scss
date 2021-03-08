@@ -1,0 +1,61 @@
+.addNewTaskForm {
+  border-radius: 0.5rem;
+  background-color: #ebecf0;
+  height: fit-content;
+}
+
+.addNewTaskInput {
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: -webkit-fill-available;
+}
+
+.addNewTaskButton {
+  background: #5aac44;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: 1.4rem;
+
+  &:hover {
+    background: #61bd4f;
+    color: white;
+  }
+}
+
+.addNewTaskButtonsContainer {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.inputTaskContainer {
+  padding: 0.8rem 0.8rem 1.6rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: white;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+  color: gray;
+}

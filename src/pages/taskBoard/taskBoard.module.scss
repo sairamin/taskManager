@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  background-image: url("../../assets/images/background2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.list + .list {
+  margin-left: 1rem;
+}
+
+.addNewListButton {
+  padding: 1.2rem 1.6rem;
+  margin-left: 1.2rem;
+  width: 32rem;
+}
+
+.addNewTaskListForm {
+  border-radius: 0.5rem;
+  width: 32rem;
+  background-color: #ebecf0;
+  padding: 0.8rem;
+  height: fit-content;
+  margin-left: 1.2rem;
+}
+
+.addNewTaskInput {
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: -webkit-fill-available;
+}
+
+.addNewTaskListButton {
+  background: #5aac44;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: 1.4rem;
+
+  &:hover {
+    background: #61bd4f;
+  }
+}
+
+.addNewTaskListButtonsContainer {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.boardContent {
+  display: flex;
+  padding: 0.8rem;
+}

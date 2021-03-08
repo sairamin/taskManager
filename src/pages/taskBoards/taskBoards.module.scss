@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/images/background.jpg");
+  background-size: cover;
+  padding: 0.8rem;
+
+  :global(.ant-card) {
+    border: unset;
+    border-radius: 0.5rem;
+    width: 24rem;
+    height: 16rem;
+  }
+
+  :global(.ant-card-body) {
+    padding: 0rem;
+  }
+}
+
+.boardContent {
+  height: 16rem;
+  background-image: url("../../assets/images/background2.jpg");
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.boardsList {
+  display: flex;
+  padding: 0rem 20rem;
+  flex-flow: wrap;
+  height: calc(100% - 40rem);
+  overflow: auto;
+}
+
+.board {
+  margin: 1rem;
+}
+
+.board + .board {
+  margin-left: 1.2rem;
+}

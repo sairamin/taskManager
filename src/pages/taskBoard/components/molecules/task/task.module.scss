@@ -1,0 +1,27 @@
+.container {
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 3px 3px -3px gray;
+  -moz-box-shadow: 0 3px 3px -3px gray;
+  box-shadow: 0 3px 3px -3px gray;
+
+  :global(.ant-comment-inner) {
+    padding: 0.8rem 0rem;
+  }
+}
+
+.dragging {
+  opacity: 0.4;
+  cursor: grabbing;
+  background-color: gray;
+  border: 1px dashed black;
+}
+
+.avatar {
+  img {
+    height: 3rem;
+  }
+}

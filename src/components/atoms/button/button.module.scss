@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  font-size: 1.4rem;
+  display: flex;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: black;
+
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
